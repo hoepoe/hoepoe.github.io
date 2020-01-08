@@ -1,0 +1,51 @@
+  <head>
+    <!-- Required meta tags -->    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">    
+    <title>{%if page.title %}{{ page.title }} - {{ site.title }} {% else %}{{ site.title }} - {{ site.description }}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{%if page.title %}{{ page.title }} - {{ site.title }} {% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:image" content= "{%if page.image %}{{ page.image }}{% else %}{{ site.url }}/{{ site.logo-square }}{% endif %}" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Ecommerce",
+        "name": "{%if page.title %}{{ page.title }} - {{ site.title }} {% else %}{{ site.title }} - {{ site.description }}{% endif %}",
+        "headline": "{%if page.title %}{{ page.title }} - {{ site.title }} {% else %}{{ site.title }} - {{ site.description }}{% endif %}",
+        {%if page.image %}"image": "{{ page.image }}",{% else %}"image": "{{site.url}}/{{ site.logo-square }}",{% endif %}
+        "description": "{% if page.description %}{{ page.description}}{% else %}{{ site.description}}{% endif %}",
+        "logo": "{%if page.image %}{{ page.image }}{% else %}{{ site.url }}/{{ site.logo-square }}{% endif %}",
+        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}"
+      }
+    </script>
+
+    <link rel="alternate" href="{{ site.url }}" hreflang="x-default" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />    
+
+    <!-- Favicon -->
+    <link href="{{ site.url }}/{{ site.icon }}" rel="shortcut icon"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/bootstrap.min.css" >
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/slicknav.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/responsive.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>

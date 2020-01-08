@@ -1,0 +1,122 @@
+    <!-- Footer Section Start -->
+    <footer class="footer-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
+            <img src="{{ site.url }}/assets/img/logo.png" alt="Logo"><br> <br>
+            <p>
+              {{ site.address }}
+            </p>
+            <ul>
+              <li><a href="https://wa.me/{{ site.nstelp }}" target="_blank">WhatsApp : {{ site.telp }}</a></li>
+              <li><a href="mailto:{{ site.email }}" target="_blank">Email : {{ site.email }}</a></li>
+              <li><a href="https://shopee.co.id/{{ site.shopee }}" target="_blank">Toko Shopee : {{ site.shopee }}</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
+            <h3>JAM BUKA</h3>
+            <p>
+              Senin - Jumat : 9.00 - 17.00 <br>
+              Sabtu : 9.00 - 13.00 <br>
+              Minggu dan Tanggal Merah : LIBUR <br>
+            </p>
+          </div>
+          
+          <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+            <h3>FACEBOOK PILIHAN</h3>
+            <ul class="image-list">
+              <li>
+                <figure class="overlay">
+                  <img class="img-fluid" src="https://scontent.fjog3-1.fna.fbcdn.net/v/t1.0-9/71197967_2426803437434459_758324244735066112_n.jpg?_nc_cat=100&_nc_eui2=AeGov7p7GQlfFHgyt2Kr3hV_8YE1Vm2xBL6feLXcrSvmVBCVCPVVs_4BcY1vKgJx69rJWH3d0vIcV-uBwFtTqGCLtDKcQ2py-kRgnSSAXkCv7Q&_nc_oc=AQmEXl8J2WWAuZlIHOed86lFmRMztLHgJN_creyQBddB4WnzqB8jg7iiPivemI0PS6U&_nc_ht=scontent.fjog3-1.fna&oh=d439e0e6ef055efad6b5ad3820047001&oe=5E3D026E" alt="fb1">
+                </figure>
+                <div class="post-content">
+                  <h6 class="post-title"> <a href="{{ site.url }}/blog" target="_blank">Invest dari JNE Semanan</a> </h6>
+                  <div class="meta"><span class="date">04 Oktober 2019</span></div>
+                </div>
+              </li>
+              <li>
+                <figure class="overlay">
+                  <img class="img-fluid" src="https://scontent.fjog3-1.fna.fbcdn.net/v/t45.1600-4/cp0/q90/spS444/p600x600/70766420_6141896633217_1425225721118195712_n.png.jpg?_nc_cat=103&_nc_eui2=AeE4epj6JmhMi3AeNX2VK9dHRiWEj0eD-HiGINjvNrS64Xa2KSmlzoMLf8kIuhB4Iohysrr3TL20BR1kgigvBczuP9SOg428GoWJ-u-vsQLL8Q&_nc_oc=AQn-P7zu3WtwReNgUO1CTvBtksxkGy12N47Jjnglq97jn8-1OMiUD1rnBHtE1-f0pYE&_nc_ht=scontent.fjog3-1.fna&oh=bd8642eaa18273b6d1b6e0b22f9f45a6&oe=5E2FBC7C" alt="fb2">
+                </figure>
+                <div class="post-content">
+                  <h6 class="post-title"><a href="{{ site.url }}/blog" target="_blank">Promo Batik</a></h6>
+                  <div class="meta"><span class="date">5 oktober 2019</span></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-md-6 col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.8s">
+            <h3>BERLANGGANAN PROMO</h3>
+            <div class="widget">
+              <div class="newsletter-wrapper">
+                <form id="subscribe-form" name="subscribe-form" class="validate" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri={{ site.feedburner }}', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+                  <div class="form-group is-empty">
+                    <input type="email" value="" name="email" class="form-control" id="EMAIL" placeholder="tulis email" required="">
+                    <input type="hidden" value="{{ site.feedburner }}" name="uri"/>
+                    <input type="hidden" name="loc" value="en_US"/>
+                    <button type="submit" name="subscribe" id="subscribes" class="btn btn-common sub-btn"><i class="lni-pointer"></i></button>
+                    <div class="clearfix"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- /.widget -->
+            <div class="widget">
+              <h5 class="widget-title">HUBUNGI KAMI</h5>
+              <ul class="footer-social">
+                <li><a class="facebook" href="{{ site.facebook }}" target="_blank"><i class="lni-facebook-filled"></i></a></li> 
+                <li><a class="google-plus" href="{{ site.instagram }}" target="_blank"><i class="lni-instagram"></i></a></li>
+                <li><a class="twitter" href="{{ site.gmap }}" target="_blank"><i class="lni-map-marker"></i></a></li>
+                <li><a class="linkedin" href="https://shopee.co.id/{{ site.shopee }}" target="_blank">S</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+    
+    <div id="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="site-info">
+              <p> <a href="{{ site.url }}">{{ site.author }}</a> &copy; <script>document.write(new Date().getFullYear());</script> </p>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- shopee button  -->    
+    <a href="https://shopee.co.id/{{ site.shopee }}" class="act-btn float" target="_blank"><b>Shopee</b></a> 
+    <!-- shopee  button  -->
+
+    <!-- whatsapp button -->
+    <a href="https://wa.me/{{ site.nstelp }}" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i></a>    
+    <!-- whatsapp button  -->
+    
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    	<i class="lni-chevron-up"></i>
+    </a>
+    
+    <div id="preloader">
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </div>

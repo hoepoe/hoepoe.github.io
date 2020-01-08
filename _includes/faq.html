@@ -1,0 +1,128 @@
+    <!-- Ask Question Section Start -->
+    <section id="faq" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Ada Pertanyaan?</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Berikut pertanyaan yang sering di ajukan</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+            <div class="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionOne" role="button" aria-expanded="true" aria-controls="questionOne">
+                    <i class="lni-pencil"></i> Apakah produk tersedia?
+                  </div>
+                </div>
+                <div id="questionOne" class="collapse" aria-labelledby="headingOne" data-parent="#question">
+                  <div class="card-body">
+                    Stok Produk kami sesuai di shopee. Jika ukuran atau warna dapat diklik, artinya stok tersedia. Jika ukuran atau warna tidak dapat di klik artinya stok habis.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <div class="header-title" data-toggle="collapse" data-target="#questionTwo" role="button" aria-expanded="false" aria-controls="questionTwo">
+                      <i class="lni-pencil"></i> Bagaimana cara order satuan? 
+                    </div>
+                </div>
+                <div id="questionTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
+                  <div class="card-body">
+                    Order satuan melalui shopee. Buka aplikasi shopee, pencarian toko: {{ site.shopee }}, pilih produk ukuran warna, lalu klik beli, pastikan nama toko kami {{ site.shopee }}
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionThree" role="button" aria-expanded="false" aria-controls="questionThree">
+                    <i class="lni-pencil"></i> Bagaimana cara order grosir?  
+                  </div>
+                </div>
+                <div id="questionThree" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                  <div class="card-body">
+                    Pembelian harga grosir lihat menu "GROSIR" lalu klik WhatsApp order 
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionFour" role="button" aria-expanded="false" aria-controls="questionFour">
+                   <i class="lni-pencil"></i> Barang jumlah banyak, ongkir murah?
+                  </div>
+                </div>
+                <div id="questionFour" class="collapse" aria-labelledby="headingFour" data-parent="#question">
+                  <div class="card-body">
+                    Ongkir murah, barang dikirim menggunakan Indah cargo. Estimasi Ongkir Rp 50.000/karung untuk wilayah Pulau Jawa, dan Rp150.000/karung untuk luar Pulau Jawa. Harga tidak mengikat, dapat berubah sesuai update tarif jasa pengiriman
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+            <div class="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne2">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionOne2" role="button" aria-expanded="true" aria-controls="questionOne2">
+                    <i class="lni-pencil"></i> Bagaimana menggunakan kode promo shopee?
+                  </div>
+                </div>
+                <div id="questionOne2" class="collapse" aria-labelledby="headingOne2" data-parent="#question">
+                  <div class="card-body">
+                    Simpan kode promo > Order barang melalui Shopee > Selesai klik beli > Pada tahap sebelum setting alamat, silahkan masukan kode di kolom kode promo
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingTwo2">
+                    <div class="header-title" data-toggle="collapse" data-target="#questionTwo2" role="button" aria-expanded="false" aria-controls="questionTwo2">
+                      <i class="lni-pencil"></i> Barang status masih dalam pengemasan?
+                    </div>
+                </div>
+                <div id="questionTwo2" class="collapse" aria-labelledby="headingTwo2" data-parent="#question">
+                  <div class="card-body">
+                    Sistem shopee dalam proses update status order maksimal 2x24 jam. Apabila lebih dari itu, silahkan hubungi kami
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingThree2">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionThree2" role="button" aria-expanded="false" aria-controls="questionThree2">
+                    <i class="lni-pencil"></i>Bagaimana cara menghubungi {{ site.author }}?
+                  </div>
+                </div>
+                <div id="questionThree2" class="collapse" aria-labelledby="headingThree2" data-parent="#question">
+                  <div class="card-body">
+                   Silahkan chat WhatsApp {{ site.telp }}. Alamat: {{ site.address }}. Atau google map pencarian: {{ site.author }}
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingFour2">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionFour2" role="button" aria-expanded="false" aria-controls="questionFour2">
+                    <i class="lni-pencil"></i> Bagaimana jika ada pertanyaan lain?
+                  </div>
+                </div>
+                <div id="questionFour2" class="collapse" aria-labelledby="headingFour2" data-parent="#question">
+                  <div class="card-body">
+                    Pertanyaan lain silahkan kirim pesan melalui WhatsApp {{ site.telp }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Ask Question Section End -->
